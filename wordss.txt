@@ -1,7 +1,0 @@
-http://127.0.0.1:8000/docs
-uvicorn mec_node_1:app --reload --port 8000
-uvicorn app:app --reload --port 8000
-uvicorn mec_node_1:app --reload --port 8001
-uvicorn mec_node_2:app --reload --port 8002
-uvicorn mec_node_3:app --reload --port 8003
-http://127.0.0.1:8001/ui
