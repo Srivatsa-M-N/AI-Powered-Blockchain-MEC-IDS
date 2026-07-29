@@ -1,0 +1,259 @@
+body {
+
+    margin: 0;
+
+    background: linear-gradient(
+        135deg,
+        #08111f,
+        #101d35
+    );
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero h1 {
+
+    font-size: 3rem;
+
+    margin-bottom: 10px;
+
+    color: #4fc3f7;
+}
+
+.hero p {
+
+    font-size: 1.2rem;
+
+    margin-bottom: 50px;
+}
+
+.cards {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+
+    justify-content: center;
+}
+
+.node-card {
+
+    width: 220px;
+
+    height: 220px;
+
+    text-decoration: none;
+
+    color: white;
+
+    border-radius: 25px;
+
+    background: rgba(
+        255,
+        255,
+        255,
+        0.08
+    );
+
+    backdrop-filter: blur(12px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+.node-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 0 30px #4fc3f7;
+}
+
+.node-card i {
+
+    font-size: 50px;
+
+    margin-bottom: 20px;
+
+    color: #4fc3f7;
+}
+
+.node-card h3 {
+
+    margin: 0;
+}
+.dashboard-body {
+
+    background: linear-gradient(
+        135deg,
+        #08111f,
+        #101d35
+    );
+
+    color: white;
+
+    min-height: 100vh;
+}
+
+.glass-card {
+
+    background: rgba(
+        255,
+        255,
+        255,
+        0.08
+    );
+
+    backdrop-filter: blur(12px);
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    box-shadow: 0 0 20px rgba(
+        79,
+        195,
+        247,
+        0.2
+    );
+}
+
+.btn-primary {
+
+    background-color: #4fc3f7;
+
+    border: none;
+}
+
+.btn-primary:hover {
+
+    background-color: #29b6f6;
+}
+canvas {
+
+    max-height: 350px;
+}
+
+#threatLevel {
+
+    color: #4fc3f7;
+
+    font-size: 2.5rem;
+}
+
+#timeline {
+
+    max-height: 300px;
+
+    overflow-y: auto;
+}
+
+#blacklist {
+
+    max-height: 300px;
+
+    overflow-y: auto;
+}
+.alert-box {
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+.alert-danger-box {
+
+    background: rgba(
+        231,
+        76,
+        60,
+        0.15
+    );
+
+    border: 2px solid #e74c3c;
+
+    color: #e74c3c;
+
+    box-shadow:
+        0 0 20px rgba(
+            231,
+            76,
+            60,
+            0.4
+        );
+}
+
+.alert-success-box {
+
+    background: rgba(
+        46,
+        204,
+        113,
+        0.15
+    );
+
+    border: 2px solid #2ecc71;
+
+    color: #2ecc71;
+
+    box-shadow:
+        0 0 20px rgba(
+            46,
+            204,
+            113,
+            0.4
+        );
+}
+/* Status badges for IDS results */
+.status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.status-attempt {
+    background-color: #f1c40f; /* yellow */
+    color: #000;
+}
+
+.status-blacklisted {
+    background-color: #e74c3c; /* red */
+    color: #fff;
+}
+
+.status-safe {
+    background-color: #2ecc71; /* green */
+    color: #fff;
+}
