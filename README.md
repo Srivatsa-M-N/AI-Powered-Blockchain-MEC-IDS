@@ -161,6 +161,6 @@ uvicorn mec_node_3:app --reload --port 8003
 
 ## Author
 
-**Your Name**
+**srivatsa m n**
 
 Bachelor of Engineering (Information Science & Engineering)
